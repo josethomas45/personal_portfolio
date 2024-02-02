@@ -1,10 +1,23 @@
- *
 {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif ;
     box-sizing: border-box;
 }
+@media only screen and (max-width: 600px) {
+    .header-text {
+        margin-top: 50%;
+        font-size: 18px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    nav ul {
+        width: 100%; 
+        right: 0; 
+    }
+}
+
 body{
     background: #080808;
     color: #fff;
@@ -70,7 +83,6 @@ width: 140px;
  .header-text h1 span{
     color: #ff004f;
  }
-/*-----------about----------->*/
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -135,7 +147,7 @@ font-size: 14px;
 .tab-contents.active-tab{
     display: block;
 }
- /*service*/
+
  #services{
     padding: 30px 0;
 
@@ -176,7 +188,6 @@ font-size: 14px;
     background: #ff004f;
     transform: translateY(-10px);
 }
-/*portfoli*/
 #portfolio{
 
     padding: 50px 0;
@@ -257,8 +268,6 @@ font-size: 14px;
 .btn:hover{
     background: #ff004f;
 }
-
-/*---------contact--------*/
 .contact-left{
     margin-top: 15px;
     flex-basis: 35%;
@@ -316,19 +325,16 @@ form input, form textarea{
     font-weight: 300;
     margin-top: 20px;
 }
-/*----------------css to make responsible-----------*/
-
 nav .fa-solid{
     display: none;
 }
 
 @media only screen and (max-width: 600px){
     #header{
-        /*----------add image here----------*/
         background-image: url(image/);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 50%;
         font-size: 20px;
     }
     .header-text h1{
@@ -382,6 +388,3 @@ nav .fa-solid{
         font-size: 14px;
     }
 }
-
-
-
